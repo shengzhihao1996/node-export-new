@@ -32,7 +32,6 @@ func Metrice() string {
 	cpu_load_status := make(map[string]interface{})
 	v := strings.Split(string(cmd_output), " ")
 	cpu_load_status["m1"] = strings.TrimRight(v[0], "\n")
-
 	cpu_load_status["m5"] = strings.TrimRight(v[1], "\n")
 	cpu_load_status["m15"] = strings.TrimRight(v[2], "\n")
 
